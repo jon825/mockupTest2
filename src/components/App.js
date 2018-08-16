@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+
 import NavBar from './Navbar'
-import "./App.css";
+import "../styles/App.css";
 
 class App extends Component {
   render() {
@@ -12,6 +13,12 @@ class App extends Component {
             <div className="col my-auto">Services</div>
           </header>
           <div className="row content">
+
+        {/***********
+
+          Article disappears when screen's width is less than 994px
+
+        ***********/}
             <article className="col-lg-2 d-none d-lg-block">
               <ul>
                 <li>SERVICES</li>
@@ -43,7 +50,7 @@ class App extends Component {
                     <div className="card">
                       <img
                         className="card-img-top"
-                        src={require("./img/air_delivery.jpg")}
+                        src={require("../img/air_delivery.jpg")}
                       />
                       <div className="card-body">
                         <h5 className="card-title">Air delivery</h5>
@@ -60,7 +67,7 @@ class App extends Component {
                     <div className="card">
                       <img
                         className="card-img-top"
-                        src={require("./img/ground_shipping.jpg")}
+                        src={require("../img/ground_shipping.jpg")}
                       />
                       <div className="card-body">
                         <h5 className="card-title">Ground shipping</h5>
@@ -77,7 +84,7 @@ class App extends Component {
                     <div className="card">
                       <img
                         className="card-img-top"
-                        src={require("./img/sea_delivery.png")}
+                        src={require("../img/sea_delivery.png")}
                       />
                       <div className="card-body">
                         <h5 className="card-title">Sea delivery</h5>
@@ -98,6 +105,13 @@ class App extends Component {
         <footer className="container-fluid">
           <div className="container">
             <div className="row">
+
+        {/***********
+
+          Contact column in Footer disappears when screen's width is less than 577px
+
+        ***********/}
+
               <div className="col-lg-2 col-md-4 col-sm-4 d-none d-sm-block">
                 <ul>
                   <li id="first-list">HOME</li>
